@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — storefus.ink</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar" class="scrolled">
+  <div class="nav-container">
+    <a href="index.html" class="nav-back-link">
+      <span data-i18n="nav_back">← Kembali</span>
+    </a>
+    
+    <div class="logo-wrapper" onclick="window.location.href='index.html'">
+      <img src="logo1.png" alt="Logo" class="nav-logo-img">
+      <div class="logo">storefus<span>.ink</span></div>
+    </div>
+    
+    <div class="nav-actions">
+      <button class="btn-lang" onclick="toggleLanguage()" id="lang-toggle">EN</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO HEADER -->
+<header class="portfolio-hero">
+  <h1 class="text-gradient" data-i18n="portfolio_detail_title">Karya Terbaik Kami.</h1>
+  <p data-i18n="portfolio_detail_subtitle">Koleksi lengkap proyek desain UI/UX, pembuatan website, dan pembuatan CV profesional yang kami kerjakan sepenuh hati.</p>
+</header>
+
+<!-- FILTER SECTION -->
+<div class="filter-container">
+  <div class="filter-tabs">
+    <button class="filter-btn active" id="btn-all" data-i18n="filter_all">Semua Karya</button>
+    <button class="filter-btn" id="btn-uiux" data-i18n="filter_uiux">Desain UI/UX</button>
+    <button class="filter-btn" id="btn-web" data-i18n="filter_web">Pembuatan Website</button>
+    <button class="filter-btn" id="btn-cv" data-i18n="filter_cv">Pembuatan CV</button>
+  </div>
+</div>
+
+<!-- PORTFOLIO GRID -->
+<main class="detail-portfolio-grid" id="portfolio-grid">
+  <!-- Dynamic cards injected via portfolio.js -->
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="f-logo">
+      <img src="logo1.png" alt="Logo" class="footer-logo-img">
+      storefus<span>.ink</span>
+    </div>
+    <div class="f-links">
+      <a href="index.html#services" data-i18n="nav_services">Layanan</a>
+      <a href="index.html#portfolio" data-i18n="nav_portfolio">Karya</a>
+      <a href="index.html#pricing" data-i18n="nav_pricing">Harga</a>
+      <a href="index.html#testimonials" data-i18n="nav_review">Ulasan</a>
+    </div>
+  </div>
+  <div class="f-bottom">
+    <p data-i18n="footer_text">© 2024 storefus.ink Digital Studio. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="js/portfolio.js"></script>
+
+</body>
+</html>
